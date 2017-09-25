@@ -4,6 +4,8 @@
     Synology 에 Maria DB를 설치하여 Table에 저장관리.
   - RSS Feeds에 등록 예시.(받고자 하는 영상의 제목에 문화공간이 있을 경우) 
   - http://localhost/rss/rss_Tfreeca.php?k=문화공간(프러스 조합 작동 안됨)
+  - 정규식을 사용하여 구문분석 : 문화공간\.E\d+\.\d+\.((1080p)|(720p))-NEXT --> 720p-NEXT 또는 1080p-NEXT 작동 됨.
+                        : 문화공간\.E\d+\.\d+\.720p-NEXT --> 720p-NEXT 작동 됨.
     
 # 설치순서
   1. RSS Schedule을 중지합니다.
